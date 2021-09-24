@@ -18,6 +18,10 @@ public class AddressBook {
         }
     }
 
+    public void duplicateBuddy(BuddyInfo aBuddy) {
+        myBuddies.add(aBuddy);
+    }
+
     public BuddyInfo removeBuddy(int index) {
         if(index >= 0 && index < myBuddies.size()) {
             return myBuddies.remove(index);
